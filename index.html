@@ -1,0 +1,229 @@
+<div id="app">
+  <nav>
+    <div class="logo">Gajalakshmi</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeBtn">🌙</button>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Hi, I'm Gajalakshmi Purushothaman</h1>
+    <h3>BE CSE (Artificial Intelligence & Machine Learning)</h3>
+    <p>Aspiring AI & Full Stack Developer passionate about building innovative solutions.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Computer Science Engineering student specializing in
+        Artificial Intelligence and Machine Learning. I enjoy web
+        development, AI applications, and creating user-friendly digital experiences.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">Machine Learning</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio using HTML, CSS and JavaScript.</p>
+        <button>View Project</button>
+      </div>
+
+      <div class="card">
+        <h3>Student Management System</h3>
+        <p>Database-driven student information management application.</p>
+        <button>View Project</button>
+      </div>
+
+      <div class="card">
+        <h3>AI Chat Assistant</h3>
+        <p>Basic chatbot developed using Python and AI concepts.</p>
+        <button>View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>BE CSE (AIML)</h3>
+        <p>Pursuing Computer Science Engineering with specialization in Artificial Intelligence and Machine Learning.</p>
+      </div>
+
+      <div class="card">
+        <h3>Higher Secondary Education</h3>
+        <p>Completed Higher Secondary School with strong academic performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Gajalakshmi Purushothaman | Portfolio</p>
+  </footer>
+</div>
+
+<style>
+:root{
+  --bg:#f5f7fb;
+  --text:#222;
+  --card:#fff;
+  --primary:#2563eb;
+}
+
+.dark{
+  --bg:#121212;
+  --text:#fff;
+  --card:#1f1f1f;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+nav{
+  background:var(--primary);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  position:sticky;
+  top:0;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  text-align:center;
+  padding:100px 20px;
+  background:linear-gradient(135deg,#2563eb,#4f46e5);
+  color:white;
+}
+
+section{
+  padding:60px 10%;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+button{
+  margin-top:15px;
+  padding:10px 18px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+form{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input,textarea{
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#2563eb;
+  color:white;
+}
+
+@media(max-width:768px){
+  nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
+</style>
+
+<script>
+document.getElementById("themeBtn").addEventListener("click",function(){
+  document.body.classList.toggle("dark");
+});
+</script>

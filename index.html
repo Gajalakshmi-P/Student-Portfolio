@@ -16,7 +16,18 @@
     <h1>Hi, I'm Gajalakshmi Purushothaman</h1>
     <h3>BE CSE (Artificial Intelligence & Machine Learning)</h3>
     <p>Aspiring AI & Full Stack Developer passionate about building innovative solutions.</p>
-  </section>
+
+<div class="social-links">
+  <a href="https://github.com/Gajalakshmi-P" target="_blank">
+    <button>GitHub</button>
+  </a>
+
+  <a href="https://www.linkedin.com/in/gajalakshmi-purushothaman-05164b380" target="_blank">
+    <button>LinkedIn</button>
+  </a>
+</div>
+
+</section>
 
   <section id="about">
     <h2>About Me</h2>
@@ -98,127 +109,22 @@
 </div>
 
 <style>
-:root{
-  --bg:#f5f7fb;
-  --text:#222;
-  --card:#fff;
-  --primary:#2563eb;
-}
-
-.dark{
-  --bg:#121212;
-  --text:#fff;
-  --card:#1f1f1f;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:Arial,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
-
-nav{
-  background:var(--primary);
-  color:white;
+.social-links{
+  margin-top:20px;
   display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  position:sticky;
-  top:0;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
 }
 
-nav ul{
-  display:flex;
-  list-style:none;
-  gap:20px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-}
-
-.hero{
-  text-align:center;
-  padding:100px 20px;
-  background:linear-gradient(135deg,#2563eb,#4f46e5);
-  color:white;
-}
-
-section{
-  padding:60px 10%;
-}
-
-h2{
-  text-align:center;
-  margin-bottom:30px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:var(--card);
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.card h3{
-  margin-bottom:10px;
-}
-
-button{
-  margin-top:15px;
-  padding:10px 18px;
+.social-links button{
+  background:white;
+  color:#2563eb;
+  font-weight:bold;
+  padding:10px 20px;
   border:none;
-  background:#2563eb;
-  color:white;
   border-radius:6px;
   cursor:pointer;
-}
-
-form{
-  max-width:600px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-}
-
-input,textarea{
-  padding:12px;
-  border:1px solid #ccc;
-  border-radius:6px;
-}
-
-footer{
-  text-align:center;
-  padding:20px;
-  background:#2563eb;
-  color:white;
-}
-
-@media(max-width:768px){
-  nav{
-    flex-direction:column;
-    gap:10px;
-  }
-
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
 }
 </style>
 
